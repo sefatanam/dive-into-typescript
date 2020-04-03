@@ -1,3 +1,3 @@
 # TypeScript Basics
 
-! [Design](/images/Scene#1.jpg)
+![Design](/images/Scene#1.jpg)
