@@ -1,8 +1,10 @@
-
-import { NumbersCollection } from './NumbersCollection';
-
+export interface Sortable {
+    length: number;
+    swap(leftIndex: number, rightIndex: number): void;
+    compare(leftIndex: number, rightIndex: number): boolean;
+}
 export class Sorter {
-    constructor(public collection: NumbersCollection) { }
+    constructor(public collection: Sortable) { }
     sort(): void {
         const { length } = this.collection;
         for (let i = 0; i < length; i++) {
