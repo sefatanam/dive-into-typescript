@@ -16,4 +16,7 @@ export class User implements Mappable {
             lng: parseFloat(faker.address.longitude()),
         };
     }
+    markerContent(): string {
+        return `User name : ${this.name}`;
+    }
 }
