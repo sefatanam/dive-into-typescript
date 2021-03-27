@@ -1,4 +1,4 @@
-import { Sortable } from "./Sorter";
+import { Sorter2 } from "./Sorter";
 
 class Node {
     next: Node | null = null;
@@ -6,7 +6,7 @@ class Node {
 }
 
 
-export class LinkedList implements Sortable {
+export class LinkedList extends Sorter2 {
     head: Node | null = null;
 
     add(data: number): void {
