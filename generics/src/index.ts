@@ -83,3 +83,59 @@ makeZodSafeFetch(
 /* Thats all, have a nice generic day */
 
 /* Dont use return type unless https://youtu.be/nwSe95uFN8E*/
+
+
+/* Const annotation */
+/* 
+const routes = <const T>(routes: T[]) => {
+
+    const addRedirect = (from: T, to: T) =>{
+        //implementation
+    }
+
+    return { addRedirect }
+}
+
+const router = routes(['api/user', 'api/docs', 'api/ping'])
+router.addRedirect('api/users', 'api/ping') // will through error */
+
+
+/* Decorators are no more in experimental */
+
+function log(originalMethod: (...args: any[]) => any, _context: ClassMethodDecoratorContext) {
+    return async function methof(this:any,...args:any[] ){
+        console.log(`${_context.name.toString()} called with ${JSON.stringify(args)}`)
+        const result = await originalMethod.call(this, ...args);
+        console.log(`${_context.name.toString()} finished`)
+        return result;
+    }
+
+}
+
+export class SDK {
+    // Code Smell
+    /*   public async getUser(id: string) {
+          console.log(`getUser called with ${id}`)
+          const result = await Promise.resolve({ id })
+          console.log('getUser finished')
+          return result;
+      }
+  
+      public async getPost(id: string) {
+          console.log(`getPost called with ${id}`)
+          const result = await Promise.resolve({ id })
+          console.log('getPost finished')
+          return result;
+      } */
+
+    @log
+    public getUser(id: string) {
+        return Promise.resolve({ id })
+    }
+
+    @log
+    public getPost(id: string) {
+        return Promise.resolve({ id })
+    }
+
+}
