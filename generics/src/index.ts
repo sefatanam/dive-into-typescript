@@ -61,7 +61,7 @@ console.log(result.value) */
 const result = typedObjectKeys({ name: 'sefat', age: 19 }) */
 
 // The Zod
-import { z } from 'zod'
+/* import { z } from 'zod'
 
 const makeZodSafeFetch = <TData>(url: string, schema: z.Schema<TData>): Promise<TData> => {
     return fetch(url)
@@ -78,6 +78,8 @@ makeZodSafeFetch(
     })
 ).then((res) => {
     console.log(res)
-})
+}) */
 
 /* Thats all, have a nice generic day */
+
+/* Dont use return type unless https://youtu.be/nwSe95uFN8E*/
