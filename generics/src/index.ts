@@ -86,7 +86,7 @@ makeZodSafeFetch(
 
 
 /* Const annotation */
-/* 
+
 const routes = <const T>(routes: T[]) => {
 
     const addRedirect = (from: T, to: T) =>{
@@ -96,8 +96,8 @@ const routes = <const T>(routes: T[]) => {
     return { addRedirect }
 }
 
-const router = routes(['api/user', 'api/docs', 'api/ping'])
-router.addRedirect('api/users', 'api/ping') // will through error */
+const router = routes(['api/user/:id', 'api/docs', 'api/ping'])
+router.addRedirect('api/user/:id', 'api/ping') // will through error
 
 
 /* Decorators are no more in experimental */
@@ -109,12 +109,11 @@ function log(originalMethod: (...args: any[]) => any, _context: ClassMethodDecor
         console.log(`${_context.name.toString()} finished`)
         return result;
     }
-
 }
 
 export class SDK {
     // Code Smell
-    /*   public async getUser(id: string) {
+    /*   public async getUser(id: string) { 
           console.log(`getUser called with ${id}`)
           const result = await Promise.resolve({ id })
           console.log('getUser finished')
@@ -139,3 +138,10 @@ export class SDK {
     }
 
 }
+
+
+const sdk = new SDK()
+//    ^?
+
+const result = sdk.getPost('a')
+//    ^?
