@@ -9,7 +9,9 @@ const obj = {
     }
 }
 
-const getDeepValue = <Obj, FirstKey extends keyof Obj, SecondKey extends keyof Obj[FirstKey]>(
+const getDeepValue = <Obj,
+ FirstKey extends keyof Obj,
+ SecondKey extends keyof Obj[FirstKey]>(
     obj      : Obj,
     firstKey : FirstKey,
     secondKey: SecondKey

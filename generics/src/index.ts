@@ -86,7 +86,7 @@ makeZodSafeFetch(
 
 
 /* Const annotation */
-
+/* 
 const routes = <const T>(routes: T[]) => {
 
     const addRedirect = (from: T, to: T) =>{
@@ -95,9 +95,19 @@ const routes = <const T>(routes: T[]) => {
 
     return { addRedirect }
 }
+ */
 
-const router = routes(['api/user/:id', 'api/docs', 'api/ping'])
-router.addRedirect('api/user/:id', 'api/ping') // will through error
+const routes = <const T>(routes:T[]) => {
+
+    const addRedirect = (from:T, to:T) =>{
+        //implementation
+    }
+
+    return { addRedirect }
+}
+
+const router = routes(['api/users', 'api/docs', 'api/ping'])
+router.addRedirect('api/users', 'api/ping') // should through error
 
 
 /* Decorators are no more in experimental */
