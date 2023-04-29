@@ -31,6 +31,17 @@ function makeCustomer<T extends User>(u: T): T {
 }*/
 
 const person = {
-    name: "",
+    name: "Sefat",
     age: 12
+} as const;
+
+interface User {
+    name:string;
+    age:number;
 }
+
+type SolidName<T extends Readonly<User>> = { [k in T['name']]:string }
+
+type InferNames = SolidName<typeof person>;
+
+const firstUser : InferNames ={'Sefat':'Anam'}
