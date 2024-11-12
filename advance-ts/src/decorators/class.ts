@@ -15,7 +15,7 @@
 // }
 
 // Example with decorators
-
+/* 
 function DBankCard(constructor: Function) {
     constructor.prototype.cardId = Math.floor(Math.random() * 100);
 }
@@ -28,3 +28,4 @@ class EBLBank {
 }
 
 let result = new EBLBank("Sefat");
+ */

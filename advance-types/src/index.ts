@@ -44,4 +44,8 @@ type SolidName<T extends Readonly<User>> = { [k in T['name']]:string }
 
 type InferNames = SolidName<typeof person>;
 
+type Int = {
+  sefat: string
+}
+
 const firstUser : InferNames ={'Sefat':'Anam'}

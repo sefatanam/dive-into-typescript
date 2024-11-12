@@ -34,7 +34,6 @@ export function createCreature(args: Creature): UnoObject {
     }
 }
 
-
 // Solution
 
 /* import { createCreature } from "./generics/8-get-param-type";
@@ -49,6 +48,7 @@ type CreatureArgs = GetFirstArg<typeof createCreature>;
 type GhostCreature = Extract<CreatureArgs, { year: number }>;
 type ManCreature = Extract<CreatureArgs, { type: string }>;
 type ZombieCreature = Extract<CreatureArgs, { fever: string }>;
+type CreateCreatureReturnType = ReturnType<typeof createCreature>
 
 const creature: ZombieCreature = {
     name: 'Sefat',
