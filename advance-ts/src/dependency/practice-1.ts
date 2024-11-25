@@ -25,34 +25,18 @@ const postRouter = new PostRouters()
 postRouter.get()
  */
 
+import { DatabaseConnection } from "./DatabaseConnection";
+import { PostRouters } from "./PostRouters";
+import { SQLiteConnection } from "./SQLiteConnection";
 
-interface IConnection {
+interface HelloWorld {
+  str : string;
+  print(): void;
+}
+
+export interface IConnection {
     connect(): void
 }
-
-class DatabaseConnection implements IConnection {
-    connect(): void {
-        console.log('connecting to database...[default]');
-    }
-}
-
-class SQLiteConnection implements IConnection {
-    connect(): void {
-        console.log('connecting to databse... [SQLite]');
-
-    }
-}
-class PostRouters {
-    private dbConnection: IConnection;
-    constructor(db: IConnection) {
-        this.dbConnection = db;
-    }
-    get() {
-        this.dbConnection.connect()
-        console.log('Post retrive.');
-    }
-}
-
 
 const sqLiteConnection = new SQLiteConnection()
 const defaultConnection = new DatabaseConnection()

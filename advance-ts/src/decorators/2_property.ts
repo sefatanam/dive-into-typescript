@@ -1,18 +1,18 @@
 
 // Level 1
 function propertyInformation(target: Object, propertyKey: string) {
-    let value: string = target[propertyKey];
-    const get = function () {
-        if (this['authorize'] === 'Admin')
-            return  `Here is your pin : ${value}`.toUpperCase();
-        return 'You are not authorize to access it.'.toUpperCase()
-    }
+  let value: string = target[propertyKey];
+  const get = function() {
+    if (this['authorize'] === 'Admin')
+      return `Here is your pin : ${value}`.toUpperCase();
+    return 'You are not authorize to access it.'.toUpperCase()
+  }
 
-    const set = function (newValue: string) {
-        return value = newValue;
-    }
+  const set = function(newValue: string) {
+    return value = newValue;
+  }
 
-    Object.defineProperty(target, propertyKey, { set, get });
+  Object.defineProperty(target, propertyKey, { set, get });
 }
 
 // Level 2
@@ -38,15 +38,15 @@ function propertyInformation(target: Object, propertyKey: string) {
 
 
 class Bank {
-    name = '';
-    @propertyInformation
-    pin = 'ybde';
-    authorize = '';
-    constructor(name: string, pin: string, authorize?: string) {
-        this.name = name;
-        this.pin = pin;
-        this.authorize = authorize;
-    }
+  name = '';
+  @propertyInformation
+  pin = 'ybde';
+  authorize = '';
+  constructor(name: string, pin: string, authorize?: string) {
+    this.name = name;
+    this.pin = pin;
+    this.authorize = authorize;
+  }
 }
 
 const bank = new Bank("IFIC Bank", '12344', 'Adminx');

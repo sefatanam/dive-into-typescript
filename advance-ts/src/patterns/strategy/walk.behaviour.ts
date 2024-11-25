@@ -4,23 +4,25 @@
  * Walk Composition
  */
 export interface IWalk {
-    walk()
+  walk()
 }
 
 export class WildWalking implements IWalk {
-    walk() {
-        return "Wild Walking..."
-    }
+  walk() {
+    return "Wild Walking..."
+  }
 }
 
 export class HighWalking implements IWalk {
-    walk() {
-        return "High Walking..."
-    }
+  walk() {
+    return "High Walking..."
+  }
 }
 
 export class NonWalking implements IWalk {
-    walk() {
-        return "Non Walking..."
-    }
+  walk() {
+    return "Non Walking..."
+  }
 }
+
+

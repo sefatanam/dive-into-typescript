@@ -1,6 +1,7 @@
 
+
 interface Payment {
-    pay(amount: number)
+    pay(amount: number):void;
 }
 
 // remain same as before

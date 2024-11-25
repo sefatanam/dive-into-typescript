@@ -6,42 +6,50 @@
 import { IFly, WildFlying, LongFlying, CloudFlying } from "./fly.behaviour";
 import { IWalk, WildWalking, HighWalking, NonWalking } from "./walk.behaviour";
 
-class Duck {
+class DuckBase {
 
-    public name: string;
+  public type: string;
 
-    constructor(
-        name: string,
-        private fy: IFly,
-        private wk: IWalk
-    ) {
-        this.name = name;
-    }
+  constructor(
+    type: string,
+    private fy: IFly,
+    private wk: IWalk
+  ) {
+    this.type = type;
+  }
 
 
-    fly() {
-        return this.fy.fly()
-    }
+  fly() {
+    return this.fy.fly()
+  }
 
-    walk() {
-        return this.wk.walk()
-    }
+  walk() {
+    return this.wk.walk()
+  }
 
 }
 
+export function LogStrategy() {
+  /**
+   * Result
+   */
+  let fuck_ducks = new Set<DuckBase>();
 
-/**
- * Result
- */
-let ducks = new Set<Duck>();
+  fuck_ducks.add(new DuckBase('Wild Duck', new WildFlying(), new WildWalking()))
+  fuck_ducks.add(new DuckBase('Mountain Duck', new LongFlying(), new HighWalking()))
+  fuck_ducks.add(new DuckBase('Cloud Duck', new CloudFlying(), new HighWalking()))
+  fuck_ducks.add(new DuckBase('Duck', new WildFlying(), new WildWalking()))
 
-ducks.add(new Duck('Wild Duck', new WildFlying(), new WildWalking()))
-ducks.add(new Duck('Mountain Duck', new LongFlying(), new HighWalking()))
-ducks.add(new Duck('Cloud Duck', new CloudFlying(), new HighWalking()))
-ducks.add(new Duck('Rubber Duck', new WildFlying(), new NonWalking()))
-
-
-for (let duck of ducks) {
-    console.log(`Name : ${duck.name} | Fly Status : ${duck.fly()} | Walk Status : ${duck.walk()}`)
+  for (let duck of fuck_ducks) {
+    console.log(`Name : ${duck.type} | Fly Status : ${duck.fly()} | Walk Status : ${duck.walk()}`)
+  }
 }
+
+let stringValue  = [
+  "hello_world",
+  "hello_universe",
+  "hello_sun",
+  "hello_mars",
+  "hello_jupiter",
+]
 
