@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observer</title>
+
+    <style>
+        :root {
+            --wrapper_width: 350px;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+        }
+
+        .wrapper {
+            width: var(--wrapper_width);
+            padding: 1rem;
+            box-shadow: 2px 2px 2px gainsboro;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .input,
+        .output {
+            width: calc(var(--wrapper_width)/2);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <div class="input">
+            <input type="text" placeholder="name" id="name">
+            <button id="push">Push</button>
+        </div>
+
+        <div class="output">
+            <ul id="list">
+            </ul>
+        </div>
+
+        <div class="output">
+            <p>Now Schedule for</p>
+            <div id="time"> </div>
+        </div>
+    </div>
+
+    <template id="schedule">
+        <h2>Hello Stunde, </h2>
+        <h4>${name} - ${classNo}</h4>
+        <p>There is not time to leave please ! ${time}</p>
+    </template>
+
+    <script src="./observer.js"></script>
+</body>
+
+</html>
