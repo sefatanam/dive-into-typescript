@@ -38,7 +38,7 @@ export function LogStrategy() {
   fuck_ducks.add(new DuckBase('Wild Duck', new WildFlying(), new WildWalking()))
   fuck_ducks.add(new DuckBase('Mountain Duck', new LongFlying(), new HighWalking()))
   fuck_ducks.add(new DuckBase('Cloud Duck', new CloudFlying(), new HighWalking()))
-  fuck_ducks.add(new DuckBase('Duck', new WildFlying(), new WildWalking()))
+  fuck_ducks.add(new DuckBase('Duck', new WildFlying(), new NonWalking()))
 
   for (let duck of fuck_ducks) {
     console.log(`Name : ${duck.type} | Fly Status : ${duck.fly()} | Walk Status : ${duck.walk()}`)

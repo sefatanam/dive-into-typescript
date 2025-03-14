@@ -1,5 +1,5 @@
 console.clear()
-console.log('::: Here is the result of strategy pattern => ')
+console.log(':::Here is the result of strategy pattern => ')
 import { LogStrategy} from './patterns/strategy/implementation'
 LogStrategy()
 

@@ -5,7 +5,7 @@ const fn = (v: boolean) => {
   if (v)
     return 1
   else
-    return 2
+     return 2
 }
 
 const fn2 = () => {
@@ -15,7 +15,7 @@ const fn2 = () => {
     return false
   }
 }
-// Answer the following questions:
-type a = MyReturnType<typeof fn> // should be "1 | 2"
+// Answer 
+type a = ReturnType<typeof fn> // should be "1 | 2"
 
 type b = MyReturnType<typeof fn2>
