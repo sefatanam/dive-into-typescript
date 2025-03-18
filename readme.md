@@ -20,4 +20,15 @@ git clone https://github.com/your-username/dive-into-typescript.git
 cd dive-into-typescript
 ```
 
+<<<<<<< HEAD
+=======
+## Contributing
+
+Contributions are welcome! If you have ideas for new examples or improvements to existing ones, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+>>>>>>> ea459e0 (remove dump file and folders)
 Happy coding! 🚀

@@ -18,6 +18,9 @@ export class NumbersCollection extends Sorter2 {
         this.data[leftIndex + 1] = leftHand;
     }
 }
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> ea459e0 (remove dump file and folders)
