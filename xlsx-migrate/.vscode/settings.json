@@ -1,0 +1,44 @@
+{
+    "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 17,
+    "editor.lineHeight": 1.7,
+    "editor.fontWeight": "400",
+    "workbench.sideBar.location": "right",
+    "editor.minimap.enabled": false,
+    "editor.cursorBlinking": "expand",
+    "workbench.productIconTheme": "fluent-icons",
+    "editor.mouseWheelZoom": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "js/ts.implicitProjectConfig.checkJs": false,
+    "git.openRepositoryInParentFolders": "always",
+    "terminal.integrated.fontSize": 16,
+    "git.confirmSync": false,
+    "[javascript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[css]": {
+      "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[scss]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "editor.quickSuggestionsDelay": 9,
+    "editor.suggest.preview": true,
+    "git.enableSmartCommit": true,
+    "explorer.confirmDelete": false,
+    "workbench.colorTheme": "Noir Poimandres",
+    // "editor.fontLigatures": true
+    "editor.fontLigatures": "'ss01', 'zero', 'onum'",
+  }
+  

@@ -1,0 +1,1117 @@
+[
+    {
+        "0": {
+            "name": "DocumentName",
+            "value": "Document-ID: 121942, DocClass: Test Master",
+            "formattedValue": "Document-ID: 121942, DocClass: Test Master",
+            "fieldType": 0
+        },
+        "2": {
+            "name": "ZAHL1",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "3": {
+            "name": "DATUM1",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "4": {
+            "name": "ZAHL2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "5": {
+            "name": "DATUM2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "6": {
+            "name": "DATUM_JAHR",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "7": {
+            "name": "DATUM3",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "8": {
+            "name": "Text",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "9": {
+            "name": "Begin1",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "10": {
+            "name": "Begin2",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "11": {
+            "name": "Ende1",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "12": {
+            "name": "Ende2",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "13": {
+            "name": "Einheit1",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "14": {
+            "name": "Einheit2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "15": {
+            "name": "Wert1",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "16": {
+            "name": "Wert2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "17": {
+            "name": "Bundesland1",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "18": {
+            "name": "Bundesland2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "19": {
+            "name": "First Name",
+            "value": "Kai",
+            "formattedValue": "Kai",
+            "fieldType": 0
+        },
+        "20": {
+            "name": "Last Name",
+            "value": "Mehringskötter",
+            "formattedValue": "Mehringskötter",
+            "fieldType": 0
+        },
+        "66": {
+            "name": "UserName",
+            "value": "ka",
+            "formattedValue": "ka",
+            "fieldType": 0
+        },
+        "90000015": {
+            "name": "Creator",
+            "value": "Systemverwalter",
+            "formattedValue": "Systemverwalter",
+            "fieldType": 6
+        },
+        "90000016": {
+            "name": "Created on",
+            "value": "05.06.2023 09:18:15",
+            "formattedValue": "05.06.2023 09:18:15",
+            "fieldType": 3
+        },
+        "90000023": {
+            "name": "Modified by",
+            "value": "Systemverwalter",
+            "formattedValue": "Systemverwalter",
+            "fieldType": 6
+        },
+        "90000024": {
+            "name": "Last Modification",
+            "value": "23.11.2023 10:13:17",
+            "formattedValue": "11/23/2023 10:13:17 AM",
+            "fieldType": 3
+        },
+        "90000025": {
+            "name": "Last Access by",
+            "value": "Systemverwalter",
+            "formattedValue": "Systemverwalter",
+            "fieldType": 6
+        },
+        "90000026": {
+            "name": "Last Access",
+            "value": "30.11.2023 16:22:00",
+            "formattedValue": "11/30/2023 4:22:00 PM",
+            "fieldType": 3
+        },
+        "90000027": {
+            "name": "Document ID",
+            "value": "121942",
+            "formattedValue": "121942",
+            "fieldType": 1
+        },
+        "90000201": {
+            "name": "File Count",
+            "value": "1",
+            "formattedValue": "1",
+            "fieldType": 1
+        },
+        "90000210": {
+            "name": "Document Links",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "90002000": {
+            "name": "Dokumentenstatus",
+            "value": "Neu",
+            "formattedValue": "Neu",
+            "fieldType": 0
+        },
+        "90002001": {
+            "name": "Prüfer",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 6
+        },
+        "90002105": {
+            "name": "Dokumentensperre",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "90002106": {
+            "name": "Metasonic InstanzID",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "Action": {
+            "jsonDataItem": {
+                "label1": "Document ID",
+                "label2": "Creation Date",
+                "label3": "Document Class",
+                "label4": "Text",
+                "value1": "121942",
+                "value2": "05.06.2023 09:18:15",
+                "value3": "Test Master",
+                "value4": "  ",
+                "PinItemDocument": true,
+                "DetailViewDocument": true,
+                "OpenInWebClient": true,
+                "CheckIn": true,
+                "SendToProcess": true,
+                "Download": true,
+                "DeleteDocument": true,
+                "SendToLFE": true,
+                "SendEmail": true,
+                "EnableAdhocWorkflow": true,
+                "AddDocumentToFolder": true,
+                "RemoveDocumentFromFolder": true,
+                "ExtendedSetting": {
+                    "HighlightedIndexField": "",
+                    "FooterIcon": "",
+                    "FooterIndexField": "",
+                    "DefaultColor": "rgba(111,175,255,1)",
+                    "Rules": []
+                },
+                "EasyAccessAction": [
+                    "PinItemDocument"
+                ],
+                "CustomActionSetting": [],
+                "dbValue1": "90000027",
+                "keyValuePairObj1": "[{\"Key\":\"90000027\",\"Value\":\"121942\"}]",
+                "dbValue2": "90000016",
+                "keyValuePairObj2": "[{\"Key\":\"90000016\",\"Value\":\"05.06.2023 09:18:15\"}]",
+                "dbValue3": "90000002",
+                "keyValuePairObj3": "[{\"Key\":\"90000002\",\"Value\":\"Test Master\"}]",
+                "dbValue4": " $[8] ",
+                "keyValuePairObj4": "[{\"Key\":\"0\",\"Value\":\" \"},{\"Key\":\"8\",\"Value\":\"\"},{\"Key\":\"0\",\"Value\":\" \"}]",
+                "highlightColor": "rgba(111,175,255,1)"
+            },
+            "id": "121942",
+            "index": 0,
+            "searchActions": [
+                {
+                    "url": "http://ecmdev01-hb-t.aits.local:8084/OpenWebClient.aspx?type=viewer&docId=121942&configuration=ECMDEV01-T&tokenKey=",
+                    "urlType": 2
+                }
+            ],
+            "hasItemExists": true,
+            "isCheckedOut": false,
+            "name": "Document-ID: 121942, DocClass: Test Master",
+            "docClassID": "9696",
+            "disabledTileActions": null,
+            "extendedSetting": {
+                "HighlightedIndexField": "",
+                "FooterIcon": "",
+                "FooterIndexField": "",
+                "DefaultColor": "rgba(111,175,255,1)",
+                "Rules": []
+            },
+            "customActionSettings": [],
+            "easyAccessActions": [
+                "PinItemDocument"
+            ],
+            "enableAdhocWorkflow": true,
+            "isWorkflowRunning": false,
+            "documentFolderIds": [],
+            "isWorkflowDone": false
+        }
+    },
+    {
+        "0": {
+            "name": "DocumentName",
+            "value": "Document-ID: 121943, DocClass: Test Master",
+            "formattedValue": "Document-ID: 121943, DocClass: Test Master",
+            "fieldType": 0
+        },
+        "2": {
+            "name": "ZAHL1",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "3": {
+            "name": "DATUM1",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "4": {
+            "name": "ZAHL2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "5": {
+            "name": "DATUM2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "6": {
+            "name": "DATUM_JAHR",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "7": {
+            "name": "DATUM3",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "8": {
+            "name": "Text",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "9": {
+            "name": "Begin1",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "10": {
+            "name": "Begin2",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "11": {
+            "name": "Ende1",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "12": {
+            "name": "Ende2",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "13": {
+            "name": "Einheit1",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "14": {
+            "name": "Einheit2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "15": {
+            "name": "Wert1",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "16": {
+            "name": "Wert2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "17": {
+            "name": "Bundesland1",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "18": {
+            "name": "Bundesland2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "19": {
+            "name": "First Name",
+            "value": "Hans",
+            "formattedValue": "Hans",
+            "fieldType": 0
+        },
+        "20": {
+            "name": "Last Name",
+            "value": "Meier",
+            "formattedValue": "Meier",
+            "fieldType": 0
+        },
+        "66": {
+            "name": "UserName",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "90000015": {
+            "name": "Creator",
+            "value": "Systemverwalter",
+            "formattedValue": "Systemverwalter",
+            "fieldType": 6
+        },
+        "90000016": {
+            "name": "Created on",
+            "value": "05.06.2023 09:18:23",
+            "formattedValue": "05.06.2023 09:18:23",
+            "fieldType": 3
+        },
+        "90000023": {
+            "name": "Modified by",
+            "value": "Systemverwalter",
+            "formattedValue": "Systemverwalter",
+            "fieldType": 6
+        },
+        "90000024": {
+            "name": "Last Modification",
+            "value": "02.08.2023 14:26:13",
+            "formattedValue": "8/2/2023 2:26:13 PM",
+            "fieldType": 3
+        },
+        "90000025": {
+            "name": "Last Access by",
+            "value": "Systemverwalter",
+            "formattedValue": "Systemverwalter",
+            "fieldType": 6
+        },
+        "90000026": {
+            "name": "Last Access",
+            "value": "30.10.2023 16:13:58",
+            "formattedValue": "10/30/2023 4:13:58 PM",
+            "fieldType": 3
+        },
+        "90000027": {
+            "name": "Document ID",
+            "value": "121943",
+            "formattedValue": "121943",
+            "fieldType": 1
+        },
+        "90000201": {
+            "name": "File Count",
+            "value": "1",
+            "formattedValue": "1",
+            "fieldType": 1
+        },
+        "90000210": {
+            "name": "Document Links",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "90002000": {
+            "name": "Dokumentenstatus",
+            "value": "Neu",
+            "formattedValue": "Neu",
+            "fieldType": 0
+        },
+        "90002001": {
+            "name": "Prüfer",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 6
+        },
+        "90002105": {
+            "name": "Dokumentensperre",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "90002106": {
+            "name": "Metasonic InstanzID",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "Action": {
+            "jsonDataItem": {
+                "label1": "Document ID",
+                "label2": "Creation Date",
+                "label3": "Document Class",
+                "label4": "Text",
+                "value1": "121943",
+                "value2": "05.06.2023 09:18:23",
+                "value3": "Test Master",
+                "value4": "  ",
+                "PinItemDocument": true,
+                "DetailViewDocument": true,
+                "OpenInWebClient": true,
+                "CheckIn": true,
+                "SendToProcess": true,
+                "Download": true,
+                "DeleteDocument": true,
+                "SendToLFE": true,
+                "SendEmail": true,
+                "EnableAdhocWorkflow": true,
+                "AddDocumentToFolder": true,
+                "RemoveDocumentFromFolder": true,
+                "ExtendedSetting": {
+                    "HighlightedIndexField": "",
+                    "FooterIcon": "",
+                    "FooterIndexField": "",
+                    "DefaultColor": "rgba(111,175,255,1)",
+                    "Rules": []
+                },
+                "EasyAccessAction": [
+                    "PinItemDocument"
+                ],
+                "CustomActionSetting": [],
+                "dbValue1": "90000027",
+                "keyValuePairObj1": "[{\"Key\":\"90000027\",\"Value\":\"121943\"}]",
+                "dbValue2": "90000016",
+                "keyValuePairObj2": "[{\"Key\":\"90000016\",\"Value\":\"05.06.2023 09:18:23\"}]",
+                "dbValue3": "90000002",
+                "keyValuePairObj3": "[{\"Key\":\"90000002\",\"Value\":\"Test Master\"}]",
+                "dbValue4": " $[8] ",
+                "keyValuePairObj4": "[{\"Key\":\"0\",\"Value\":\" \"},{\"Key\":\"8\",\"Value\":\"\"},{\"Key\":\"0\",\"Value\":\" \"}]",
+                "highlightColor": "rgba(111,175,255,1)"
+            },
+            "id": "121943",
+            "index": 1,
+            "searchActions": [
+                {
+                    "url": "http://ecmdev01-hb-t.aits.local:8084/OpenWebClient.aspx?type=viewer&docId=121943&configuration=ECMDEV01-T&tokenKey=",
+                    "urlType": 2
+                }
+            ],
+            "hasItemExists": true,
+            "isCheckedOut": false,
+            "name": "Document-ID: 121943, DocClass: Test Master",
+            "docClassID": "9696",
+            "disabledTileActions": null,
+            "extendedSetting": {
+                "HighlightedIndexField": "",
+                "FooterIcon": "",
+                "FooterIndexField": "",
+                "DefaultColor": "rgba(111,175,255,1)",
+                "Rules": []
+            },
+            "customActionSettings": [],
+            "easyAccessActions": [
+                "PinItemDocument"
+            ],
+            "enableAdhocWorkflow": true,
+            "isWorkflowRunning": false,
+            "documentFolderIds": [],
+            "isWorkflowDone": false
+        }
+    },
+    {
+        "0": {
+            "name": "DocumentName",
+            "value": "Document-ID: 122231, DocClass: Test Master",
+            "formattedValue": "Document-ID: 122231, DocClass: Test Master",
+            "fieldType": 0
+        },
+        "2": {
+            "name": "ZAHL1",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "3": {
+            "name": "DATUM1",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "4": {
+            "name": "ZAHL2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "5": {
+            "name": "DATUM2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "6": {
+            "name": "DATUM_JAHR",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "7": {
+            "name": "DATUM3",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "8": {
+            "name": "Text",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "9": {
+            "name": "Begin1",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "10": {
+            "name": "Begin2",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "11": {
+            "name": "Ende1",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "12": {
+            "name": "Ende2",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "13": {
+            "name": "Einheit1",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "14": {
+            "name": "Einheit2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "15": {
+            "name": "Wert1",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "16": {
+            "name": "Wert2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "17": {
+            "name": "Bundesland1",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "18": {
+            "name": "Bundesland2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "19": {
+            "name": "First Name",
+            "value": "abc",
+            "formattedValue": "abc",
+            "fieldType": 0
+        },
+        "20": {
+            "name": "Last Name",
+            "value": "567",
+            "formattedValue": "567",
+            "fieldType": 0
+        },
+        "66": {
+            "name": "UserName",
+            "value": "Pawan",
+            "formattedValue": "Pawan",
+            "fieldType": 0
+        },
+        "90000015": {
+            "name": "Creator",
+            "value": "Systemverwalter",
+            "formattedValue": "Systemverwalter",
+            "fieldType": 6
+        },
+        "90000016": {
+            "name": "Created on",
+            "value": "20.09.2023 13:20:39",
+            "formattedValue": "20.09.2023 13:20:39",
+            "fieldType": 3
+        },
+        "90000023": {
+            "name": "Modified by",
+            "value": "Systemverwalter",
+            "formattedValue": "Systemverwalter",
+            "fieldType": 6
+        },
+        "90000024": {
+            "name": "Last Modification",
+            "value": "20.09.2023 13:20:39",
+            "formattedValue": "9/20/2023 1:20:39 PM",
+            "fieldType": 3
+        },
+        "90000025": {
+            "name": "Last Access by",
+            "value": "Systemverwalter",
+            "formattedValue": "Systemverwalter",
+            "fieldType": 6
+        },
+        "90000026": {
+            "name": "Last Access",
+            "value": "20.09.2023 13:20:39",
+            "formattedValue": "9/20/2023 1:20:39 PM",
+            "fieldType": 3
+        },
+        "90000027": {
+            "name": "Document ID",
+            "value": "122231",
+            "formattedValue": "122231",
+            "fieldType": 1
+        },
+        "90000201": {
+            "name": "File Count",
+            "value": "0",
+            "formattedValue": "0",
+            "fieldType": 1
+        },
+        "90000210": {
+            "name": "Document Links",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "90002000": {
+            "name": "Dokumentenstatus",
+            "value": "Neu",
+            "formattedValue": "Neu",
+            "fieldType": 0
+        },
+        "90002001": {
+            "name": "Prüfer",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 6
+        },
+        "90002105": {
+            "name": "Dokumentensperre",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "90002106": {
+            "name": "Metasonic InstanzID",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "Action": {
+            "jsonDataItem": {
+                "label1": "Document ID",
+                "label2": "Creation Date",
+                "label3": "Document Class",
+                "label4": "Text",
+                "value1": "122231",
+                "value2": "20.09.2023 13:20:39",
+                "value3": "Test Master",
+                "value4": "  ",
+                "PinItemDocument": true,
+                "DetailViewDocument": true,
+                "OpenInWebClient": true,
+                "CheckIn": true,
+                "SendToProcess": true,
+                "Download": true,
+                "DeleteDocument": true,
+                "SendToLFE": true,
+                "SendEmail": true,
+                "EnableAdhocWorkflow": true,
+                "AddDocumentToFolder": true,
+                "RemoveDocumentFromFolder": true,
+                "ExtendedSetting": {
+                    "HighlightedIndexField": "",
+                    "FooterIcon": "",
+                    "FooterIndexField": "",
+                    "DefaultColor": "rgba(111,175,255,1)",
+                    "Rules": []
+                },
+                "EasyAccessAction": [
+                    "PinItemDocument"
+                ],
+                "CustomActionSetting": [],
+                "dbValue1": "90000027",
+                "keyValuePairObj1": "[{\"Key\":\"90000027\",\"Value\":\"122231\"}]",
+                "dbValue2": "90000016",
+                "keyValuePairObj2": "[{\"Key\":\"90000016\",\"Value\":\"20.09.2023 13:20:39\"}]",
+                "dbValue3": "90000002",
+                "keyValuePairObj3": "[{\"Key\":\"90000002\",\"Value\":\"Test Master\"}]",
+                "dbValue4": " $[8] ",
+                "keyValuePairObj4": "[{\"Key\":\"0\",\"Value\":\" \"},{\"Key\":\"8\",\"Value\":\"\"},{\"Key\":\"0\",\"Value\":\" \"}]",
+                "highlightColor": "rgba(111,175,255,1)"
+            },
+            "id": "122231",
+            "index": 2,
+            "searchActions": [
+                {
+                    "url": "http://ecmdev01-hb-t.aits.local:8084/OpenWebClient.aspx?type=viewer&docId=122231&configuration=ECMDEV01-T&tokenKey=",
+                    "urlType": 2
+                }
+            ],
+            "hasItemExists": false,
+            "isCheckedOut": false,
+            "name": "Document-ID: 122231, DocClass: Test Master",
+            "docClassID": "9696",
+            "disabledTileActions": null,
+            "extendedSetting": {
+                "HighlightedIndexField": "",
+                "FooterIcon": "",
+                "FooterIndexField": "",
+                "DefaultColor": "rgba(111,175,255,1)",
+                "Rules": []
+            },
+            "customActionSettings": [],
+            "easyAccessActions": [
+                "PinItemDocument"
+            ],
+            "enableAdhocWorkflow": true,
+            "isWorkflowRunning": false,
+            "documentFolderIds": [],
+            "isWorkflowDone": false
+        }
+    },
+    {
+        "0": {
+            "name": "DocumentName",
+            "value": "Document-ID: 122236, DocClass: Test Master",
+            "formattedValue": "Document-ID: 122236, DocClass: Test Master",
+            "fieldType": 0
+        },
+        "2": {
+            "name": "ZAHL1",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "3": {
+            "name": "DATUM1",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "4": {
+            "name": "ZAHL2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "5": {
+            "name": "DATUM2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "6": {
+            "name": "DATUM_JAHR",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "7": {
+            "name": "DATUM3",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "8": {
+            "name": "Text",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "9": {
+            "name": "Begin1",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "10": {
+            "name": "Begin2",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "11": {
+            "name": "Ende1",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "12": {
+            "name": "Ende2",
+            "value": "01.01.0001",
+            "formattedValue": "",
+            "fieldType": 3
+        },
+        "13": {
+            "name": "Einheit1",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "14": {
+            "name": "Einheit2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "15": {
+            "name": "Wert1",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "16": {
+            "name": "Wert2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "17": {
+            "name": "Bundesland1",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "18": {
+            "name": "Bundesland2",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "19": {
+            "name": "First Name",
+            "value": "Pawan",
+            "formattedValue": "Pawan",
+            "fieldType": 0
+        },
+        "20": {
+            "name": "Last Name",
+            "value": "Bhardwaj",
+            "formattedValue": "Bhardwaj",
+            "fieldType": 0
+        },
+        "66": {
+            "name": "UserName",
+            "value": "pawan1",
+            "formattedValue": "pawan1",
+            "fieldType": 0
+        },
+        "90000015": {
+            "name": "Creator",
+            "value": "Systemverwalter",
+            "formattedValue": "Systemverwalter",
+            "fieldType": 6
+        },
+        "90000016": {
+            "name": "Created on",
+            "value": "22.09.2023 11:35:42",
+            "formattedValue": "22.09.2023 11:35:42",
+            "fieldType": 3
+        },
+        "90000023": {
+            "name": "Modified by",
+            "value": "Systemverwalter",
+            "formattedValue": "Systemverwalter",
+            "fieldType": 6
+        },
+        "90000024": {
+            "name": "Last Modification",
+            "value": "22.09.2023 11:35:42",
+            "formattedValue": "9/22/2023 11:35:42 AM",
+            "fieldType": 3
+        },
+        "90000025": {
+            "name": "Last Access by",
+            "value": "Systemverwalter",
+            "formattedValue": "Systemverwalter",
+            "fieldType": 6
+        },
+        "90000026": {
+            "name": "Last Access",
+            "value": "22.09.2023 11:35:42",
+            "formattedValue": "9/22/2023 11:35:42 AM",
+            "fieldType": 3
+        },
+        "90000027": {
+            "name": "Document ID",
+            "value": "122236",
+            "formattedValue": "122236",
+            "fieldType": 1
+        },
+        "90000201": {
+            "name": "File Count",
+            "value": "0",
+            "formattedValue": "0",
+            "fieldType": 1
+        },
+        "90000210": {
+            "name": "Document Links",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "90002000": {
+            "name": "Dokumentenstatus",
+            "value": "Neu",
+            "formattedValue": "Neu",
+            "fieldType": 0
+        },
+        "90002001": {
+            "name": "Prüfer",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 6
+        },
+        "90002105": {
+            "name": "Dokumentensperre",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 0
+        },
+        "90002106": {
+            "name": "Metasonic InstanzID",
+            "value": "",
+            "formattedValue": "",
+            "fieldType": 1
+        },
+        "Action": {
+            "jsonDataItem": {
+                "label1": "Document ID",
+                "label2": "Creation Date",
+                "label3": "Document Class",
+                "label4": "Text",
+                "value1": "122236",
+                "value2": "22.09.2023 11:35:42",
+                "value3": "Test Master",
+                "value4": "  ",
+                "PinItemDocument": true,
+                "DetailViewDocument": true,
+                "OpenInWebClient": true,
+                "CheckIn": true,
+                "SendToProcess": true,
+                "Download": true,
+                "DeleteDocument": true,
+                "SendToLFE": true,
+                "SendEmail": true,
+                "EnableAdhocWorkflow": true,
+                "AddDocumentToFolder": true,
+                "RemoveDocumentFromFolder": true,
+                "ExtendedSetting": {
+                    "HighlightedIndexField": "",
+                    "FooterIcon": "",
+                    "FooterIndexField": "",
+                    "DefaultColor": "rgba(111,175,255,1)",
+                    "Rules": []
+                },
+                "EasyAccessAction": [
+                    "PinItemDocument"
+                ],
+                "CustomActionSetting": [],
+                "dbValue1": "90000027",
+                "keyValuePairObj1": "[{\"Key\":\"90000027\",\"Value\":\"122236\"}]",
+                "dbValue2": "90000016",
+                "keyValuePairObj2": "[{\"Key\":\"90000016\",\"Value\":\"22.09.2023 11:35:42\"}]",
+                "dbValue3": "90000002",
+                "keyValuePairObj3": "[{\"Key\":\"90000002\",\"Value\":\"Test Master\"}]",
+                "dbValue4": " $[8] ",
+                "keyValuePairObj4": "[{\"Key\":\"0\",\"Value\":\" \"},{\"Key\":\"8\",\"Value\":\"\"},{\"Key\":\"0\",\"Value\":\" \"}]",
+                "highlightColor": "rgba(111,175,255,1)"
+            },
+            "id": "122236",
+            "index": 3,
+            "searchActions": [
+                {
+                    "url": "http://ecmdev01-hb-t.aits.local:8084/OpenWebClient.aspx?type=viewer&docId=122236&configuration=ECMDEV01-T&tokenKey=",
+                    "urlType": 2
+                }
+            ],
+            "hasItemExists": false,
+            "isCheckedOut": false,
+            "name": "Document-ID: 122236, DocClass: Test Master",
+            "docClassID": "9696",
+            "disabledTileActions": null,
+            "extendedSetting": {
+                "HighlightedIndexField": "",
+                "FooterIcon": "",
+                "FooterIndexField": "",
+                "DefaultColor": "rgba(111,175,255,1)",
+                "Rules": []
+            },
+            "customActionSettings": [],
+            "easyAccessActions": [
+                "PinItemDocument"
+            ],
+            "enableAdhocWorkflow": true,
+            "isWorkflowRunning": false,
+            "documentFolderIds": [
+                "120",
+                "102"
+            ],
+            "isWorkflowDone": false
+        }
+    }
+]
