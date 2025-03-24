@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event- Delig</title>
+    <style>
+        body {
+            background: purple;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .context-menu {
+            display: none;
+        }
+
+        .context-menu.active {
+            display: grid;
+        }
+
+        .list {
+            width: 300px;
+            gap: 1rem;
+            background: white;
+            padding: .75rem;
+            position: absolute;
+            list-style: none;
+            border-radius: 0.5rem;
+        }
+
+        .list li {
+            border-radius: .5rem;
+            padding: 0.5rem;
+        }
+
+        .list li:hover {
+            background: rgba(232, 231, 231, 0.456);
+            cursor: pointer;
+        }
+
+
+        .yellow {
+            background: yellow;
+        }
+
+        form {
+            display: flex;
+        }
+
+        form div {
+            color: white;
+            border: 1px solid white;
+            padding: 1rem;
+        }
+
+       /*  .table {
+            border-collapse: collapse;
+            color: white;
+        }
+
+        .table,
+        .table th,
+        .table td {
+            border: 1px solid #cccccc75;
+            resize: both;
+            cursor: row-resize;
+        }
+
+        .table th,
+        .table td {
+            padding: 0.5rem;
+        }
+
+        .table th {
+            position: relative;
+            resize: both;
+        }
+
+        .resizer {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5px;
+            cursor: col-resize;
+            user-select: none;
+        }
+
+        .resizer:hover,
+        .resizing {
+            border-right: 2px solid blue;
+        }
+
+        .resizable {
+            border: 1px solid gray;
+            height: 100px;
+            width: 100px; 
+            position: relative;
+        }
+
+        tr {
+            resize: both;
+        } */
+
+
+        /* CSS ONLY */
+        .fixed_headers {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .fixed_headers td,
+        .fixed_headers thead th {
+            padding: 5px;
+            text-align: left;
+        }
+
+        .fixed_headers thead {
+            background-color: white;
+            color: #FDFDFD;
+        }
+
+        .fixed_headers thead tr {
+            position: relative;
+        }
+
+        .fixed_headers tbody tr:nth-child(even) {
+            background-color: #DDD;
+        }
+
+        .fixed_headers thead th {
+            position: sticky;
+            top: 0;
+            /* REQUIRED: https://stackoverflow.com/a/43707215 */
+            background-color: #333;
+            resize: horizontal;
+            overflow: auto;
+            min-width: 70px;
+        }
+    </style>
+</head>
+
+<body id="contextMenuImp">
+    <form class="form">
+        <div>
+            <label for="anchorZone">Anchor Zone</label>
+            <input type="checkbox" name="anchorZone" id="anchorZone"
+                data-bind="checked:showAnchor, event : { change : function(){$root.enableFor('anchor');}}">
+        </div>
+        <div>
+            <label for="documentZone">Document Zone</label>
+            <input type="checkbox" name="documentZone" id="documentZone"
+                data-bind="checked:showDocZone, event : { change : function(){$root.enableFor('docZone')}}">
+        </div>
+        <div>
+            <label for="itemDefinition">Item Definition</label>
+            <input type="checkbox" name="itemDefinition" id="itemDefinition"
+                data-bind="checked:showItemDefi, event : { change : function(){$root.enableFor('itemDefi')}}">
+        </div>
+    </form>
+    <ul class="list context-menu" id="list">
+        <li class="item-1" data-bind="visible:showAnchor">New Anchor</li>
+        <li class="item-2" data-bind="visible:showDocZone">Document Zone</li>
+        <li class="item-3" data-bind="visible:showItemDefi">Item Definition</li>
+        <li class="item-4">Cancel</li>
+    </ul>
+
+
+    <!-- <table id="resizeMe" class="table">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>First name</th>
+                <th>Last name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Andrea</td>
+                <td>Ross</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Penelope</td>
+                <td>Mills</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sarah</td>
+                <td>Grant</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Vanessa</td>
+                <td>Roberts</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Oliver</td>
+                <td>Alsop</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Jennifer</td>
+                <td>Forsyth</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Michelle</td>
+                <td>King</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Steven</td>
+                <td>Kelly</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Julian</td>
+                <td>Ferguson</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Chloe</td>
+                <td>Ince</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+
+
+
+    <div style="height: 300px;overflow: auto; color: white;">
+        <table class="fixed_headers">
+            <thead>
+                <tr>
+                    <th>header 1</th>
+                    <th>header 2</th>
+                    <th>header 3</th>
+                    <th>header 4</th>
+                    <th>header 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Set knockoutjs library before your own script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-debug.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
