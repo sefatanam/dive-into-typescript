@@ -18,3 +18,6 @@ export class NumbersCollection extends Sorter2 {
         this.data[leftIndex + 1] = leftHand;
     }
 }
+
+
+
