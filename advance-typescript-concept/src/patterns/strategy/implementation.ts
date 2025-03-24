@@ -45,11 +45,10 @@ export function LogStrategy() {
   }
 }
 
-let stringValue  = [
-  "hello_world",
-  "hello_universe",
-  "hello_sun",
-  "hello_mars",
-  "hello_jupiter",
-]
 
+// How to use in index.ts 01:26:45
+
+// console.clear()
+// console.log(':::Here is the result of strategy pattern => ')
+// import { LogStrategy} from './patterns/strategy/implementation'
+// LogStrategy()
