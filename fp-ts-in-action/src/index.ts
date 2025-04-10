@@ -26,3 +26,9 @@ const members = [
 const result1 = findIndex(members, (member) => member.age === 2);
 const result2 = findIndex(members, (member) => member.age === 12);
 console.log({ result1, result2 }); // { result1: { _tag:'Some', value: 1 },result2: { _tag: 'None' } }
+
+
+function one(){}
+function two(){
+  //
+}
