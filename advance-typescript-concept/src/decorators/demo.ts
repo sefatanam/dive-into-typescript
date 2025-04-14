@@ -1,4 +1,11 @@
+<<<<<<< HEAD:advance-typescript-concept/src/decorators/demo.ts
 
+=======
+console.clear()
+console.log(':::Here is the result of strategy pattern => ')
+import { LogStrategy} from './patterns/strategy/implementation'
+LogStrategy()
+>>>>>>> 19ba24b (remove unused things):advance-ts/src/index.ts
 
 //function log(...args) {
 //
