@@ -1,5 +1,7 @@
 import process from 'node:process';
-import { runCli } from './cmd/cli.js';
+import { runCli } from './cli.js';
 
-const result = runCli(process.argv.slice(2));
-console.log(result);
+// Read arguments from the command line
+const args = process.argv.slice(2);
+const output = runCli(args);
+console.log(output);
