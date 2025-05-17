@@ -1,4 +1,4 @@
-import { Command } from './interfaces/command.js';
+import { Command } from "@ct/interfaces/command.js";
 
 export class GreetCommand implements Command {
   constructor(private name?: string) {}
@@ -7,7 +7,7 @@ export class GreetCommand implements Command {
     if (this.name) {
       return `Hello, ${this.name}!`;
     } else {
-      return 'Please provide a name to greet.\nUsage: node dist/index.js greet <name>';
+      return 'Please provide a name to greet.\nUsage: node dist/cmd/cli/main.js greet <name>';
     }
   }
 }
@@ -20,8 +20,8 @@ export class HelpCommand implements Command {
       '  <...args>       - Logs the provided arguments (default behavior).',
       '  --help          - Shows this help message.',
       '\nExample usage:',
-      '  node dist/index.js greet World',
-      '  node dist/index.js --help',
+      '  node dist/cmd/cli/main.js greet World',
+      '  node dist/cmd/cli/main.js --help',
     ].join('\n');
   }
 }

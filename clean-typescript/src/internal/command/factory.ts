@@ -1,5 +1,5 @@
-import { Command } from './interfaces/command.js';
-import { GreetCommand, HelpCommand, LogArgsCommand, NoArgsCommand } from './commands.js';
+import { Command } from "@ct/interfaces/command.js";
+import { GreetCommand, HelpCommand, LogArgsCommand, NoArgsCommand } from "./commands.js";
 
 export class CommandFactory {
   static createCommand(args: string[]): Command {
