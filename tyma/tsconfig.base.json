@@ -2,9 +2,7 @@
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
     /* Projects */
-    "incremental": true, /* Save .tsbuildinfo files to allow for incremental compilation of projects. */
     "composite": true, /* Enable constraints that allow a TypeScript project to be used with project references. */
-    "tsBuildInfoFile": "./project.tsbuildinfo", /* Specify the path to .tsbuildinfo incremental compilation file. */
     /* Language and Environment */
     "target": "ESNext", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     "experimentalDecorators": true, /* Enable experimental support for legacy experimental decorators. */
