@@ -1,6 +1,9 @@
 {
   "name": "@tyma/cli",
   "version": "0.0.1",
+  "dependencies": {
+    "@tyma/algo": "workspace:*"
+  },
   "private": true,
   "nx": {
     "targets": {
