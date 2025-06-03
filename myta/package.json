@@ -1,5 +1,5 @@
 {
-  "name": "maty",
+  "name": "myta",
   "private": true,
   "scripts": {
     "build": "turbo run build",
