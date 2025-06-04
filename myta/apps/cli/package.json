@@ -9,7 +9,8 @@
     "@repo/math": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@repo/algo": "workspace:*",
-    "typescript": "latest"
+    "typescript": "latest",
+    "@repo/decorators": "workspace:*"
   },
   "dependencies": {
     "tsx": "^4.19.4"

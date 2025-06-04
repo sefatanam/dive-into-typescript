@@ -27,6 +27,9 @@ importers:
       '@repo/algo':
         specifier: workspace:*
         version: link:../../packages/algo
+      '@repo/decorators':
+        specifier: workspace:*
+        version: link:../../packages/decorators
       '@repo/math':
         specifier: workspace:*
         version: link:../../packages/math
@@ -112,6 +115,15 @@ importers:
         version: 5.8.2
 
   packages/algo:
+    devDependencies:
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      typescript:
+        specifier: latest
+        version: 5.8.3
+
+  packages/decorators:
     devDependencies:
       '@repo/typescript-config':
         specifier: workspace:*
