@@ -3,5 +3,26 @@
     {
       "mode": "auto"
     }
-  ]
+  ],
+  // Enable Neovim integration
+  //-------------------------------------------------------------
+  "vim.enableNeovim": true,
+  //-------------------------------------------------------------
+  // macOS (Darwin): point to the actual Neovim binary
+  //-------------------------------------------------------------
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+  //-------------------------------------------------------------
+  // macOS: point to your NVim init file (init.vim or init.lua)
+  //-------------------------------------------------------------
+  "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim/init.lua",
+  //-------------------------------------------------------------
+  // If you want a “clean” Neovim (no custom plugins), enable:
+  //-------------------------------------------------------------
+  "vscode-neovim.neovimClean": false,
+  //-------------------------------------------------------------
+  // (Optional) Any other settings you normally have for VSCodeVim:
+  //-------------------------------------------------------------
+  // "vim.useSystemClipboard": true,
+  // "vim.hlsearch": true,
+  // …
 }
